@@ -1,0 +1,39 @@
+{
+  "intents": [
+    {
+      "intent": "InStock",
+      "slots": [
+        {
+          "name": "ItemName",
+          "type": "PossibleNames"
+        }
+      ]
+    },
+    {
+      "intent": "Sold",
+      "slots": [
+        {
+          "name": "ItemName",
+          "type": "PossibleNames"
+        },
+        {
+          "name": "Count",
+          "type": "AMAZON.NUMBER"
+        }
+      ]
+    },
+    {
+      "intent": "BookIn",
+      "slots": [
+        {
+          "name": "ItemName",
+          "type": "PossibleNames"
+        },
+        {
+          "name": "Count",
+          "type": "AMAZON.NUMBER"
+        }
+      ]
+    }
+  ]
+}

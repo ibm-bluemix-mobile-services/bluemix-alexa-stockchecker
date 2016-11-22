@@ -1,0 +1,22 @@
+{
+    "app": {
+        "name": "Bluemix Alexa Integration",
+        "description": "This sample will quickly create an Alexa enabled Bluemix Node.js backend\n that will integrate with Cloudant NoSQL database\nThe starter will provide a number of language intents that will dynamically produce results from a database query."
+    },
+    "runtime": {
+        "name": "Node.js",
+        "description": "Node.js with alexa-app-server and alex-app packages"
+    },
+    "services": [{
+        "name": "Cloudant NoSQL Database",
+        "deployname": "data",
+        "description": "Massively scalable, secure, and continuously operational database",
+        "type": "cloudantNoSQLDB",
+        "plan": "Shared",
+        "data": [{
+            "name": "products",
+            "path": "data/cloudant/products.json"
+        }],
+        "redeploy": true
+    }]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "StockChecker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "",
+  "license": "",
+  "alexa": {
+    "applicationId":""
+  },
+  "dependencies": {
+    "alexa-app": "^2.1.0"
+  }
+}

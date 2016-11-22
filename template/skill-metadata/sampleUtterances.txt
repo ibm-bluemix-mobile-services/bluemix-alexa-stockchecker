@@ -1,0 +1,3 @@
+InStock How many of {ItemName} are in stock
+Sold I just sold {Count} of {ItemName}
+BookIn Book in {Count} new items of {ItemName}

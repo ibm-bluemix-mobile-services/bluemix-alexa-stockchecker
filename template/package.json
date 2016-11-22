@@ -1,0 +1,38 @@
+{
+  "name": "bluemix-alexa",
+  "version": "1.0.0",
+  "description": "IBM Bluemix Alexa Integration",
+  "main": "server.js",
+  "dependencies": {
+    "alexa-app-server": "^2.2.4",
+    "cfenv": "1.0.x",
+    "cloudant": "^1.6.2",
+    "recursive-install": "^1.3.0"
+  },
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "TBD"
+  },
+  "engines": {
+    "node": "4.x"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "postinstall": "node_modules/recursive-install/recursive-install.js --skip-root"
+  },
+  "keywords": [
+    "alexa",
+    "test",
+    "server",
+    "echo"
+  ],
+  "author": "Matthew Perrins, Andrew Ferrier",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xxx"
+  },
+  "homepage": "https://github.com/xxx"
+}

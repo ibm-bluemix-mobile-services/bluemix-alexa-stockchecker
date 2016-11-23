@@ -41,21 +41,30 @@ function initDBConnection() {
 }
 
 function updateStockLevel(db, name, stockleveldelta) {
-    db.find({
-        selector: {
-            name: name
-        }
-    }, (err, result) => {
-        let doc = result.docs[0];
-        if (!err) {
-            doc.stocklevel = parseInt(doc.stocklevel) + parseInt(stockleveldelta)
+    return new Promise((resolve, reject) => {
+        db.find({
+            selector: {
+                name: name
+            }
+        }, (err, result) => {
+            if (err) {
+                reject(err);
+            } else if (result.docs.length > 0) {
+                let doc = result.docs[0];
+                doc.stocklevel = parseInt(doc.stocklevel) + parseInt(stockleveldelta)
 
-            db.insert(doc, doc.id, function(err, doc) {
-                return err ? false : true;
-            });
-        } else {
-            return false;
-        }
+                db.insert(doc, doc.id, function(err, doc) {
+                    if (!err) {
+                        resolve();
+                    } else {
+                        reject('Could not update stock level');
+                    }
+                });
+            } else {
+                // Probably the item can't be found.
+                reject("No results");
+            }
+        });
     });
 }
 
@@ -80,16 +89,23 @@ app.intent("InStock", {
             name: itemname
         }
     }, (err, result) => {
-        const stockLevel = result.docs[0].stocklevel;
-        if (!err) {
-            if (stockLevel > 1) {
-                res.say(`There are ${stockLevel} items in stock.`);
-            } else if (stockLevel == 1) {
-                res.say(`There is one item in stock.`);
-            } else {
-                res.say(`We are out of stock of that item.`);
-            }
+        if (err) {
+            console.error("ERROR: ", err);
+        } else if (result.docs.length > 0) {
+            const stockLevel = result.docs[0].stocklevel;
+            if (!err) {
+                if (stockLevel > 1) {
+                    res.say(`There are ${stockLevel} items in stock.`);
+                } else if (stockLevel == 1) {
+                    res.say(`There is one item in stock.`);
+                } else {
+                    res.say(`We are out of stock of that item.`);
+                }
 
+                res.send();
+            }
+        } else {
+            res.say("I don't recognize that item.");
             res.send();
         }
     });
@@ -111,8 +127,14 @@ app.intent("Sold", {
 
     const db = cloudant_handle.use('products');
 
-    updateStockLevel(db, itemname, -count).then(() =>
-        res.say(`${count} of ${itemname} marked as sold.`));
+    updateStockLevel(db, itemname, -count).then(() => {
+        res.say(`${count} of ${itemname} marked as sold.`);
+        res.send();
+    }, (err) => {
+        res.say("Error occurred " + err);
+        res.send();
+        console.error("Error", err);
+    });
 
     // You must return false at this point otherwise the alexa-app framework
     // immediately returns the response. We want it to asynchronously wait for
@@ -131,8 +153,14 @@ app.intent("BookIn", {
 
     const db = cloudant_handle.use('products');
 
-    updateStockLevel(db, itemname, count).then(() =>
-        res.say(`${count} of ${itemname} booked in.`));
+    updateStockLevel(db, itemname, count).then(() => {
+        res.say(`${count} of ${itemname} booked in.`);
+        res.send();
+    }, (err) => {
+        res.say("Error occurred " + err);
+        res.send();
+        console.error("Error", err);
+    });
 
     // You must return false at this point otherwise the alexa-app framework
     // immediately returns the response. We want it to asynchronously wait for

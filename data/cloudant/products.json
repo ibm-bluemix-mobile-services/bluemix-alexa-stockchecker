@@ -1,66 +1,66 @@
 {
     "docs": [{
-        "name": "Royal Neck Tie",
-        "description": "This tie is made from care-free micro fiber - a textile that is almost identical in look, feel, shine, and drape to silk but is much more stain resistant. It is the perfect fabric for any daily wear necktie.",
+        "name": "royal neck tie",
+        "description": "this tie is made from care-free micro fiber - a textile that is almost identical in look, feel, shine, and drape to silk but is much more stain resistant. it is the perfect fabric for any daily wear necktie.",
         "stocklevel": 0
     }, {
-        "name": "Count Neck Tie",
-        "description": "This tie is made from care-free micro fiber - a textile that is almost identical in look, feel, shine, and drape to silk but is much more stain resistant. It is the perfect fabric for any daily wear necktie.",
+        "name": "count neck tie",
+        "description": "this tie is made from care-free micro fiber - a textile that is almost identical in look, feel, shine, and drape to silk but is much more stain resistant. it is the perfect fabric for any daily wear necktie.",
         "stocklevel": 5
     }, {
-        "name": "Tweed Jacket",
-        "description": "This wool rich tweed blazer features a three button fastening, four outer pockets and buttoned cuffs. Inside, the jacket is part lined and has two pockets with added headphone cable routing.",
+        "name": "tweed jacket",
+        "description": "this wool rich tweed blazer features a three button fastening, four outer pockets and buttoned cuffs. inside, the jacket is part lined and has two pockets with added headphone cable routing.",
         "stocklevel": 4
     }, {
-        "name": "Sport Trouser",
-        "description": "A pair of sport trousers featuring a classic five pocket design, button fly fastening and belt loops.",
+        "name": "sport trouser",
+        "description": "a pair of sport trousers featuring a classic five pocket design, button fly fastening and belt loops.",
         "stocklevel": 1
     }, {
-        "name": "Dinner Jacket",
-        "description": "This wool rich tweed blazer features a three button fastening, four outer pockets and buttoned cuffs. Inside, the jacket is part lined and has two pockets with added headphone cable routing.",
+        "name": "dinner jacket",
+        "description": "this wool rich tweed blazer features a three button fastening, four outer pockets and buttoned cuffs. inside, the jacket is part lined and has two pockets with added headphone cable routing.",
         "stocklevel": 0
     }, {
-        "name": "Neck Tie",
-        "description": "This tie is made from care-free micro fiber - a textile that is almost identical in look, feel, shine, and drape to silk but is much more stain resistant. It is the perfect fabric for any daily wear necktie.",
+        "name": "neck tie",
+        "description": "this tie is made from care-free micro fiber - a textile that is almost identical in look, feel, shine, and drape to silk but is much more stain resistant. it is the perfect fabric for any daily wear necktie.",
         "stocklevel": 5
     }, {
-        "name": "Corporal Trouser",
-        "description": "A pair of soft trousers featuring a classic five pocket design, button fly fastening and belt loops.",
+        "name": "corporal trouser",
+        "description": "a pair of soft trousers featuring a classic five pocket design, button fly fastening and belt loops.",
         "stocklevel": 4
     }, {
-        "name": "Cotton T-Shirt",
-        "description": "A classic T-Shirt featuring a single chest pocket and button cuffs.",
+        "name": "cotton t-shirt",
+        "description": "a classic t-shirt featuring a single chest pocket and button cuffs.",
         "stocklevel": 2
     }, {
-        "name": "Plain Blue T-Shirt",
-        "description": "A classic T-Shirt featuring a single chest pocket and button cuffs",
+        "name": "plain blue t-shirt",
+        "description": "a classic t-shirt featuring a single chest pocket and button cuffs",
         "stocklevel": 5
     }, {
-        "name": "Premium T-Shirt",
-        "description": "A classic T-Shirt featuring a single chest pocket and button cuffs.",
+        "name": "premium t-shirt",
+        "description": "a classic t-shirt featuring a single chest pocket and button cuffs.",
         "stocklevel": 3
     }, {
-        "name": "White Trouser",
-        "description": "A pair of soft trousers featuring a classic five pocket design, button fly fastening and belt loops.",
+        "name": "white trouser",
+        "description": "a pair of soft trousers featuring a classic five pocket design, button fly fastening and belt loops.",
         "stocklevel": 3
     }, {
-        "name": "Tough Tweed Jacket",
-        "description": "This wool rich tweed blazer features a three button fastening, four outer pockets and buttoned cuffs. Inside, the jacket is part lined and has two pockets with added headphone cable routing.",
+        "name": "tough tweed jacket",
+        "description": "this wool rich tweed blazer features a three button fastening, four outer pockets and buttoned cuffs. inside, the jacket is part lined and has two pockets with added headphone cable routing.",
         "stocklevel": 1
     }, {
-        "name": "Blue Navy T-Shirt",
-        "description": "A classic T-Shirt featuring a single chest pocket and button cuffs.",
+        "name": "blue navy t-shirt",
+        "description": "a classic t-shirt featuring a single chest pocket and button cuffs.",
         "stocklevel": 5
     }, {
-        "name": "Soft Trouser",
-        "description": "A pair of soft trousers featuring a classic five pocket design, button fly fastening and belt loops.",
+        "name": "soft trouser",
+        "description": "a pair of soft trousers featuring a classic five pocket design, button fly fastening and belt loops.",
         "stocklevel": 4
     }, {
-        "name": "Style Dinner Jacket",
-        "description": "This wool rich tweed blazer features a three button fastening, four outer pockets and buttoned cuffs. Inside, the jacket is part lined and has two pockets with added headphone cable routing.",
+        "name": "style dinner jacket",
+        "description": "this wool rich tweed blazer features a three button fastening, four outer pockets and buttoned cuffs. inside, the jacket is part lined and has two pockets with added headphone cable routing.",
         "stocklevel": 5
     }, {
-        "name": "Baron Neck Tie",
+        "name": "baron neck tie",
         "description": "This tie is made from care-free micro fiber - a textile that is almost identical in look, feel, shine, and drape to silk but is much more stain resistant. It is the perfect fabric for any daily wear necktie.",
         "stocklevel": 0
     }]

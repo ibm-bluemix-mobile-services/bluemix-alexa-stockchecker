@@ -1,3 +1,23 @@
 InStock How many of {ItemName} are in stock
-Sold I just sold {Count} of {ItemName}
-BookIn Book in {Count} new items of {ItemName}
+InStock How many {ItemName} are in stock
+InStock How many {ItemName} stock
+InStock What's the stock level for {ItemName}
+InStock What's the stock level for the {ItemName}
+InStock What's the stock level of {ItemName}
+InStock What's the stock level of the {ItemName}
+InStock Stock level of {ItemName}
+Sold to sell {Count} of {ItemName}
+Sold to mark {Count} of {ItemName} as sold
+Sold to show {Count} of {ItemName} as sold
+Sold to mark as sold {Count} items of {ItemName}
+Sold sell {Count} of {ItemName}
+Sold sold {Count} of {ItemName}
+BookIn to book in {Count} new items of {ItemName}
+BookIn to book in {Count} of {ItemName}
+BookIn book in {Count} extra items of {ItemName}
+BookIn add {Count} items of {ItemName}
+BookIn add {Count} extra items of {ItemName}
+BookIn add {Count} new items of {ItemName}
+BookIn to add {Count} items of {ItemName}
+BookIn to add {Count} extra items of {ItemName}
+BookIn to add {Count} new items of {ItemName}

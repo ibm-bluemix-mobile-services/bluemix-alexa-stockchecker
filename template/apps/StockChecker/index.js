@@ -44,7 +44,7 @@ function updateStockLevel(db, name, stockleveldelta) {
     return new Promise((resolve, reject) => {
         db.find({
             selector: {
-                name: name
+                name: { "$regex": "(?i)" + name }
             }
         }, (err, result) => {
             if (err) {
@@ -88,7 +88,7 @@ app.intent("InStock", {
 
     db.find({
         selector: {
-            name: itemname
+            name: { "$regex": "(?i)" + itemname }
         }
     }, (err, result) => {
         if (err) {

@@ -1,67 +1,21 @@
 {
     "docs": [{
-        "name": "royal neck tie",
-        "description": "this tie is made from care-free micro fiber - a textile that is almost identical in look, feel, shine, and drape to silk but is much more stain resistant. it is the perfect fabric for any daily wear necktie.",
+        "name": "shirt",
         "stocklevel": 0
     }, {
-        "name": "count neck tie",
-        "description": "this tie is made from care-free micro fiber - a textile that is almost identical in look, feel, shine, and drape to silk but is much more stain resistant. it is the perfect fabric for any daily wear necktie.",
+        "name": "pants",
         "stocklevel": 5
     }, {
-        "name": "tweed jacket",
-        "description": "this wool rich tweed blazer features a three button fastening, four outer pockets and buttoned cuffs. inside, the jacket is part lined and has two pockets with added headphone cable routing.",
+        "name": "trousers",
         "stocklevel": 4
     }, {
-        "name": "sport trouser",
-        "description": "a pair of sport trousers featuring a classic five pocket design, button fly fastening and belt loops.",
+        "name": "socks",
         "stocklevel": 1
     }, {
-        "name": "dinner jacket",
-        "description": "this wool rich tweed blazer features a three button fastening, four outer pockets and buttoned cuffs. inside, the jacket is part lined and has two pockets with added headphone cable routing.",
+        "name": "vest",
         "stocklevel": 0
     }, {
-        "name": "neck tie",
-        "description": "this tie is made from care-free micro fiber - a textile that is almost identical in look, feel, shine, and drape to silk but is much more stain resistant. it is the perfect fabric for any daily wear necktie.",
+        "name": "coat",
         "stocklevel": 5
-    }, {
-        "name": "corporal trouser",
-        "description": "a pair of soft trousers featuring a classic five pocket design, button fly fastening and belt loops.",
-        "stocklevel": 4
-    }, {
-        "name": "cotton t-shirt",
-        "description": "a classic t-shirt featuring a single chest pocket and button cuffs.",
-        "stocklevel": 2
-    }, {
-        "name": "plain blue t-shirt",
-        "description": "a classic t-shirt featuring a single chest pocket and button cuffs",
-        "stocklevel": 5
-    }, {
-        "name": "premium t-shirt",
-        "description": "a classic t-shirt featuring a single chest pocket and button cuffs.",
-        "stocklevel": 3
-    }, {
-        "name": "white trouser",
-        "description": "a pair of soft trousers featuring a classic five pocket design, button fly fastening and belt loops.",
-        "stocklevel": 3
-    }, {
-        "name": "tough tweed jacket",
-        "description": "this wool rich tweed blazer features a three button fastening, four outer pockets and buttoned cuffs. inside, the jacket is part lined and has two pockets with added headphone cable routing.",
-        "stocklevel": 1
-    }, {
-        "name": "blue navy t-shirt",
-        "description": "a classic t-shirt featuring a single chest pocket and button cuffs.",
-        "stocklevel": 5
-    }, {
-        "name": "soft trouser",
-        "description": "a pair of soft trousers featuring a classic five pocket design, button fly fastening and belt loops.",
-        "stocklevel": 4
-    }, {
-        "name": "style dinner jacket",
-        "description": "this wool rich tweed blazer features a three button fastening, four outer pockets and buttoned cuffs. inside, the jacket is part lined and has two pockets with added headphone cable routing.",
-        "stocklevel": 5
-    }, {
-        "name": "baron neck tie",
-        "description": "This tie is made from care-free micro fiber - a textile that is almost identical in look, feel, shine, and drape to silk but is much more stain resistant. It is the perfect fabric for any daily wear necktie.",
-        "stocklevel": 0
     }]
 }

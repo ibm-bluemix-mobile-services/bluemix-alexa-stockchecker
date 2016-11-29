@@ -52,6 +52,11 @@ function updateStockLevel(db, name, stockleveldelta) {
             } else if (result.docs.length > 0) {
                 let doc = result.docs[0];
                 doc.stocklevel = parseInt(doc.stocklevel) + parseInt(stockleveldelta)
+                if(doc.stocklevel < 0) {
+                    // We should handle this better so we can't sell what we
+                    // don't have!
+                    doc.stocklevel = 0;
+                }
 
                 db.insert(doc, doc.id, function(err, doc) {
                     if (!err) {

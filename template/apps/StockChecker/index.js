@@ -84,6 +84,8 @@ app.intent("InStock", {
     let itemname = req.slot("ItemName");
     const db = cloudant_handle.use('products');
 
+    console.log("Checking stock level of " + itemname);
+
     db.find({
         selector: {
             name: itemname
@@ -106,6 +108,7 @@ app.intent("InStock", {
             }
         } else {
             res.say("I don't recognize that item.");
+            console.error("Couldn't find item", itemname);
             res.send();
         }
     });
@@ -124,6 +127,8 @@ app.intent("Sold", {
 }, (req, res) => {
     let itemname = req.slot("ItemName");
     let count = req.slot("Count");
+
+    console.log(`Selling ${count} of ${itemname}`);
 
     const db = cloudant_handle.use('products');
 
@@ -150,6 +155,8 @@ app.intent("BookIn", {
 }, (req, res) => {
     let itemname = req.slot("ItemName");
     let count = req.slot("Count");
+
+    console.log(`Booking in ${count} of ${itemname}`);
 
     const db = cloudant_handle.use('products');
 

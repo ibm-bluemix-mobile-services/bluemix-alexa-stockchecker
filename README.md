@@ -57,13 +57,66 @@ Ensure that you have:
 
    After running `cf push`, you should be able to see the application running on the Bluemix dashboard. Visiting the application route will greet you with a landing page displaying more information about this template and the ability to explore the API.
 
-5. To run your backend locally, type the commands:
+### Setting up the Alexa Skill in the Amazon Developer Console
 
-	`npm install`
+Instructions for setting up the skill in the Amazon Developer Console
 
-	`npm start`
+1. Once you've signed up or logged in, open the Alexa Skills Kit:
 
-   (You can test this local instance by opening a web browser to `http://localhost:XXXX/alexa/StockChecker`, where XXXX is the port number printed when you start the app).
+    ![](images/1.png)
+
+1. On the next page, click "Add a new skill":
+
+    ![](images/2.png)
+
+1. Fill out the "Skill Information" page like this. You will need to pick a unique name for the skill as Amazon requires that they are unique. You might like to prefix it with your company name or your initials:
+
+    ![](images/3.png)
+
+1. Fill out the interaction model page like this (to populate the Intent Schema, the Custom Slots, and the Sample Utterances, you can use the files `intentSchema.json`, `customslots.txt` (with a ‘type’ of `PossibleNames`), and `sampleUtterances.json` respectively from the `skill-metadata/` subdirectory of the generated application - you should be able to use these unchanged):
+
+    ![](images/4.png)
+
+   Hit Next.
+
+1. Fill out the configuration tab like this:
+
+    ![](images/5.png)
+
+1. You need to change the service endpoint to match the hostname you deployed earlier, i.e.: <http://yourhostname.mybluemix.net/alexa/StockChecker/>.
+
+1. Pick "My development endpoint is a sub-domain of a domain that has a wildcard certificate from a certificate authority" and click "Next":
+
+    ![](images/6.png)
+
+1. On the next panel, make sure testing is enabled:
+
+    ![](images/7.png)
+
+### Testing the Skill in the Amazon Developer Console
+
+Now you can test! Flip to the testing panel, and enter utterances:
+
+![](images/8.png)
+
+Some example utterances to try:
+
+* "Add five extra socks"
+* "What's the stock level of trousers?"
+* "Sell four shirts"
+
+### Testing with a Real Alexa Device
+
+There's actually nothing else you need to do to test with a real Alexa device (Echo or Echo Dot), assuming your Alexa device is associated with the same Amazon ID you've used to set up the Skill. Your skill will simply appear automatically on your device, using whatever Invocation Name you defined when you set up the skill. Try the same utterances as above, e.g.:
+
+* "Alexa, ask Stock Checker to add five extra socks"
+* "Alexa, ask Stock Checker what's the stock level of trousers?"
+* "Alexa, ask Stock Checker to sell four shirts"
+
+You can also say:
+
+* "Alexa, open Stock Checker", then...
+* "Alexa, add five extra socks"
 
 ### License
 This package contains sample code provided in source code form. The samples are licensed under the Apache License, Version 2.0 (the "License"). You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 and may also view the license in the license file within this package.

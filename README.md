@@ -12,10 +12,6 @@ The backend uses the following Bluemix services and runtime:
 **Services**
 * **Cloudant NoSQL DB** to hold a list products in a NoSQL database.
 
-### Data architecture
-
-*TODO*: Placeholder, image needs to go here.
-
 ## Configuring the Backend
 
 The backend can be easily installed using the **bluegen** command line tool. This CLI tool logs you into Bluemix and prepares the backend services for use. It automatically provisions the services and populates them with the test data required to get up to speed quickly.
